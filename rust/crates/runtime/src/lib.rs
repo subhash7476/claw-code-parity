@@ -44,6 +44,11 @@ pub use mcp_client::{
     McpClaudeAiProxyTransport, McpClientAuth, McpClientBootstrap, McpClientTransport,
     McpRemoteTransport, McpSdkTransport, McpStdioTransport,
 };
+pub use mcp_stdio::{
+    spawn_mcp_stdio_process, JsonRpcError, JsonRpcId, JsonRpcRequest, JsonRpcResponse,
+    McpInitializeClientInfo, McpInitializeParams, McpInitializeResult, McpInitializeServerInfo,
+    McpStdioProcess,
+};
 pub use oauth::{
     code_challenge_s256, generate_pkce_pair, generate_state, loopback_redirect_uri,
     OAuthAuthorizationRequest, OAuthRefreshRequest, OAuthTokenExchangeRequest, OAuthTokenSet,
